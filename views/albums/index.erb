@@ -1,0 +1,9 @@
+<h1>Album List</h1>
+
+<% @albums.each do |album| %>
+<ul>
+<li><%= album.title() %> - <%= album.artist_name() %></li>
+</ul>
+<% end %>
+
+<p><a href="/albums/new">Add Albums</a></p>

@@ -7,6 +7,8 @@
     <th>Artist</th>
     <th></th>
     <th>Quantity</th>
+    <th></th>
+    <th>Stock Level</th>
   </tr>
   <% for album in @albums %>
   <tr>
@@ -15,6 +17,8 @@
     <td><%= album.artist_name %></td>
     <td> | </td>
     <td><%= album.quantity %></td>
+    <td> | </td>
+    <td class = "<%=album.stock_level%>"><%= album.stock_level %></td>
 
     <% end %>
   </tr>

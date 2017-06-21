@@ -20,11 +20,10 @@ class Album
     @id = new_album.first()['id'].to_i
   end
 
-  def self.stock_level()
-    sql = "SElECT * FROM albums;"
-    result = SqlRunner.run(sql)
-    album = Album.new(result)
-    return album.quantity[0]
+  def stock_level()
+    return "High" if @quantity >= 50 
+    return "Medium" if @quantity >= 25
+    return "Low"
   end
 
   def artist_name() 

@@ -1,0 +1,39 @@
+* {
+  font-family: arial;
+  background-color: #4086d6;
+}
+
+h1 {
+  background: -webkit-linear-gradient(white, lightblue);
+  font-family: courier;
+  text-align: center;
+}
+
+h2 {
+  font-family: courier;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+
+.Low {
+  color: red;
+  opacity: 0.5
+}
+
+.Medium {
+  color: yellow;
+}
+
+.High {
+  color: green;
+}
+
+li {
+  color: white;
+}
+
+
